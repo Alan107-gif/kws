@@ -7,6 +7,11 @@ Beschreibung: KWS ist eine leichte, in Python implementierte Lösung für ein de
 
 Vorteile: • Leichtgewichtig: Es werden nur systemeigene Bibliotheken (Sockets, Threading etc.) genutzt. • Dezentral: Jeder Rechner agiert als Knoten in einem Netzwerk, ohne zentrale Serverabhängigkeit. • Flexibel: Erweiterte Befehle ermöglichen das Teilen von Kontaktlisten, selektives Hinzufügen von Kontakten und automatische Synchronisation. • Offline-Nachrichten: Nachrichten, die nicht sofort zugestellt werden können, werden zwischengespeichert und bei Wiederverbindung automatisch gesendet. • Einfache Installation: Mit den beiliegenden Installationsskripten (instance-kws.sh für Linux, instance-kws.bat für Windows) wird ein ZIP-Paket heruntergeladen, entpackt und ein Autostart eingerichtet.
 
+Anforderungen: • Python 3.x
+• Für Linux: curl, unzip (sind meist in den Paketquellen verfügbar, z. B. über „sudo apt install curl unzip“)
+• Für Windows: PowerShell (bereits in neueren Windows-Versionen enthalten)
+• Keine zusätzlichen externen Bibliotheken nötig
+
 Installation:
 
 Linux:
