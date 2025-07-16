@@ -35,3 +35,17 @@ Nutzung: Nach der Installation laufen die Komponenten automatisch: • kws.py st
     Request <auth-id/user_defined_name> <Befehl>: Sendet eine Anfrage an einen Kontakt. Unterstützte Befehle sind INFO, ADDLIST (übermittelt die eigene Kontaktliste) und LIST (fragt die Kontaktliste des Zielrechners ab). Zusätzliche Einstellungen wie das Ping-Intervall können in der Datei config.cfk angepasst werden.
 
 Viel Erfolg mit KWS – deinem dezentralen Kommunikationsnetzwerk!
+
+## C++ Version
+
+Eine einfache Implementierung des Servers existiert auch in `kws_cpp.cpp`.
+Der C++ Code bildet die gleichen Grundfunktionen wie `kws.py` ab und nutzt nur
+die Standardbibliothek. Zum Kompilieren wird ein C++17 fähiger Compiler benötigt,
+z.B. mit
+
+```bash
+g++ -std=c++17 kws_cpp.cpp -o kws_cpp
+```
+
+Ein kleines Python-Skript `host_bridge.py` kann verwendet werden, um mit dem
+kompilierten Programm zu interagieren (PING, INFO, LIST, Nachrichten).
